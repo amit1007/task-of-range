@@ -1,0 +1,16 @@
+<div style="padding-bottom: 20px">
+  <div>
+      <label class="searchLabel">Start</label>
+      <input type="text" [(ngModel)]="start" />
+      <label class="searchLabel" style="margin-left: 10px">Range</label>
+      <input type="text" [(ngModel)]="range" style="margin-left: 10px" />
+      <button (click)="map.route(start, range)" style="margin-left: 5px">Search</button>
+  </div>
+</div>
+<here-map
+  #map
+  appId="KvR9H86HjeuX4BqHTCsR"
+  appCode="EqvlDxDauvkc5DuLRVvOjA"
+  width="75%"
+  height="630px">
+</here-map>
